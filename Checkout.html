@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="keywords" content="spiritual ecommerce, premium wellness products, incense oils candles, mindful living, divine essentials" />
+    <meta name="description" content="Secure checkout for Divine Essentials with fast and simple order completion." />
+    <meta name="theme-color" content="#111111" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Checkout | Divine Essentials" />
+    <meta property="og:description" content="Secure checkout for Divine Essentials with fast and simple order completion." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format,compress&fit=crop&w=1200&q=60" />
+    <meta property="og:url" content="https://divine-essentials.vercel.app/checkout.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://divine-essentials.vercel.app/checkout.html" />
+    <title>Checkout | Divine Essentials</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell checkout-shell">
+      <header class="checkout-topbar">
+        <a class="brand" href="index.html">Divine Essentials</a>
+        <div class="locale-controls" aria-label="Region settings">
+          <label>
+            <select class="js-currency" aria-label="Currency">
+              <option value="USD">USD</option>
+              <option value="INR">INR</option>
+            </select>
+          </label>
+          <label>
+            <select class="js-language" aria-label="Language">
+              <option value="en">English</option>
+              <option value="hi">Hindi</option>
+            </select>
+          </label>
+          <span class="locale-badge" data-language-current>English</span>
+        </div>
+        <a class="checkout-back" href="cart.html">Back to Cart</a>
+      </header>
+
+      <main class="checkout-page" aria-labelledby="checkout-title">
+        <section class="checkout-form-wrap" data-reveal>
+          <h1 id="checkout-title">Secure Checkout</h1>
+          <p>Complete your order details. Payment is processed securely via Razorpay.</p>
+
+          <form id="checkout-form" class="checkout-form">
+            <label for="full-name">Full Name</label>
+            <input id="full-name" name="fullName" type="text" required />
+
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" required />
+
+            <label for="address">Shipping Address</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel" inputmode="tel" required />
+
+            <fieldset class="payment-method">
+              <legend>Payment Method</legend>
+              <label class="payment-option">
+                <input type="radio" name="payment" value="razorpay" checked />
+                <span>Razorpay Secure Payment</span>
+              </label>
+            </fieldset>
+
+            <button class="btn btn-primary" type="submit" id="pay-now-btn">Pay Securely</button>
+            <p id="payment-status" class="payment-status" aria-live="polite"></p>
+          </form>
+        </section>
+
+        <aside class="checkout-summary" data-reveal>
+          <h2>Order Summary</h2>
+          <div id="checkout-items" class="checkout-items"></div>
+          <p class="summary-line"><span>Subtotal</span><strong id="checkout-subtotal">$0.00</strong></p>
+          <p class="summary-line"><span>Shipping</span><strong id="checkout-shipping">$0.00</strong></p>
+          <p class="summary-line"><span>Delivery Estimate</span><strong id="checkout-estimate">—</strong></p>
+          <p class="summary-line total-line"><span>Total</span><strong id="checkout-total">$0.00</strong></p>
+        </aside>
+      </main>
+    </div>
+
+    <script src="intl.js" defer></script>
+    <script src="cart-utils.js" defer></script>
+    <script src="main.js" defer></script>
+    <script src="order-utils.js" defer></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js" defer></script>
+    <script src="checkout.js" defer></script>
+  </body>
+</html>
