@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="keywords" content="spiritual ecommerce, premium wellness products, incense oils candles, mindful living, divine essentials" />
+    <meta name="description" content="Discover Celestial Aroma Oil crafted for calm, clarity, and intentional rituals." />
+    <meta name="theme-color" content="#111111" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Celestial Aroma Oil | Divine Essentials" />
+    <meta property="og:description" content="Discover Celestial Aroma Oil crafted for calm, clarity, and intentional rituals." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format,compress&fit=crop&w=1200&q=60" />
+    <meta property="og:url" content="https://divine-essentials.vercel.app/product.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://divine-essentials.vercel.app/product.html" />
+    <title>Celestial Aroma Oil | Divine Essentials</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="navbar" aria-label="Primary">
+        <a class="brand" href="index.html">Divine Essentials</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          Menu
+        </button>
+        <nav id="nav-links" class="nav-links">
+          <a href="products.html">Shop</a>
+          <a href="products.html">Collections</a>
+          <a href="product.html">Featured</a>
+          <a href="login.html">Login</a>
+        </nav>
+        <div class="locale-controls" aria-label="Region settings">
+          <label>
+            <select class="js-currency" aria-label="Currency">
+              <option value="USD">USD</option>
+              <option value="INR">INR</option>
+            </select>
+          </label>
+          <label>
+            <select class="js-language" aria-label="Language">
+              <option value="en">English</option>
+              <option value="hi">Hindi</option>
+            </select>
+          </label>
+        </div>
+
+        <a class="cta" href="cart.html" data-cart-link>Cart (0)</a>
+      </header>
+
+      <main class="detail-page" aria-labelledby="product-title">
+        <section class="gallery" aria-label="Product image gallery" data-reveal>
+          <img
+            id="main-image"
+            class="main-image"
+            src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format,compress&fit=crop&w=1000&q=60"
+            alt="Celestial Aroma Oil"
+          />
+          <div class="thumb-row">
+            <button class="thumb active" data-image="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format,compress&fit=crop&w=1000&q=60" type="button">
+              <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format,compress&fit=crop&w=200&q=60" alt="Aroma bottle front" loading="lazy" decoding="async" />
+            </button>
+            <button class="thumb" data-image="https://images.unsplash.com/photo-1600185365523-26d7a4cc7519?auto=format,compress&fit=crop&w=1000&q=60" type="button">
+              <img src="https://images.unsplash.com/photo-1600185365523-26d7a4cc7519?auto=format,compress&fit=crop&w=200&q=60" alt="Aroma bottle side" loading="lazy" decoding="async" />
+            </button>
+            <button class="thumb" data-image="https://images.unsplash.com/photo-1616628182509-6d3f282cd57b?auto=format,compress&fit=crop&w=1000&q=60" type="button">
+              <img src="https://images.unsplash.com/photo-1616628182509-6d3f282cd57b?auto=format,compress&fit=crop&w=200&q=60" alt="Aroma setup" loading="lazy" decoding="async" />
+            </button>
+          </div>
+        </section>
+
+        <section class="product-meta" data-reveal>
+          <h1 id="product-title">Celestial Aroma Oil</h1>
+          <p class="price" data-usd-price="34">$34</p>
+
+          <div class="benefits">
+            <h2>Benefits</h2>
+            <ul>
+              <li>Promotes calm and grounded energy</li>
+              <li>Crafted with clean botanical extracts</li>
+              <li>Designed for morning and evening rituals</li>
+            </ul>
+          </div>
+
+          <div class="purchase-row">
+            <label for="detail-qty">Qty</label>
+            <input id="detail-qty" type="number" min="1" value="1" />
+          </div>
+          <button
+            class="btn btn-primary add-to-cart"
+            type="button"
+            data-id="celestial-aroma-oil"
+            data-name="Celestial Aroma Oil"
+            data-price="34"
+            data-image="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format,compress&fit=crop&w=1000&q=60"
+          >
+            Add to Cart
+          </button>
+        </section>
+      </main>
+    </div>
+
+    <script src="intl.js" defer></script>
+    <script src="cart-utils.js" defer></script>
+    <script src="main.js" defer></script>
+    <script src="product.js" defer></script>
+  </body>
+</html>
