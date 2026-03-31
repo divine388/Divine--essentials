@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="keywords" content="spiritual ecommerce, premium wellness products, incense oils candles, mindful living, divine essentials" />
+    <meta name="description" content="Review selected Divine Essentials items, update quantities, and continue to checkout." />
+    <meta name="theme-color" content="#111111" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Your Cart | Divine Essentials" />
+    <meta property="og:description" content="Review selected Divine Essentials items, update quantities, and continue to checkout." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format,compress&fit=crop&w=1200&q=60" />
+    <meta property="og:url" content="https://divine-essentials.vercel.app/cart.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://divine-essentials.vercel.app/cart.html" />
+    <title>Your Cart | Divine Essentials</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="navbar" aria-label="Primary">
+        <a class="brand" href="index.html">Divine Essentials</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          Menu
+        </button>
+        <nav id="nav-links" class="nav-links">
+          <a href="products.html">Shop</a>
+          <a href="products.html">Collections</a>
+          <a href="product.html">Featured</a>
+          <a href="login.html">Login</a>
+        </nav>
+        <div class="locale-controls" aria-label="Region settings">
+          <label>
+            <select class="js-currency" aria-label="Currency">
+              <option value="USD">USD</option>
+              <option value="INR">INR</option>
+            </select>
+          </label>
+          <label>
+            <select class="js-language" aria-label="Language">
+              <option value="en">English</option>
+              <option value="hi">Hindi</option>
+            </select>
+          </label>
+        </div>
+
+        <a class="cta" href="cart.html" data-cart-link>Cart (0)</a>
+      </header>
+
+      <main class="cart-page" aria-labelledby="cart-title">
+        <section class="listing-header" data-reveal>
+          <h1 id="cart-title">Your Cart</h1>
+          <p>Review your selected essentials and update quantities before checkout.</p>
+        </section>
+
+        <section class="cart-layout" data-reveal>
+          <div id="cart-items" class="cart-items"></div>
+          <aside class="cart-summary">
+            <h2>Order Summary</h2>
+            <p class="summary-line">
+              <span>Total</span>
+              <strong id="cart-total">$0</strong>
+            </p>
+            <a class="btn btn-primary" href="checkout.html">Proceed to Checkout</a>
+          </aside>
+        </section>
+      </main>
+    </div>
+
+    <script src="intl.js" defer></script>
+    <script src="cart-utils.js" defer></script>
+    <script src="main.js" defer></script>
+    <script src="cart.js" defer></script>
+  </body>
+</html>
