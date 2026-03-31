@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="keywords" content="spiritual ecommerce, premium wellness products, incense oils candles, mindful living, divine essentials" />
+    <meta name="description" content="Browse luxury spiritual products including oils, incense, candles, and wellness essentials." />
+    <meta name="theme-color" content="#111111" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Shop Spiritual Products | Divine Essentials" />
+    <meta property="og:description" content="Browse luxury spiritual products including oils, incense, candles, and wellness essentials." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format,compress&fit=crop&w=1200&q=60" />
+    <meta property="og:url" content="https://divine-essentials.vercel.app/products.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://divine-essentials.vercel.app/products.html" />
+    <title>Shop Spiritual Products | Divine Essentials</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="navbar" aria-label="Primary">
+        <a class="brand" href="index.html">Divine Essentials</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          Menu
+        </button>
+        <nav id="nav-links" class="nav-links">
+          <a href="products.html">Shop</a>
+          <a href="products.html">Collections</a>
+          <a href="product.html">Featured</a>
+          <a href="login.html">Login</a>
+        </nav>
+        <div class="locale-controls" aria-label="Region settings">
+          <label>
+            <select class="js-currency" aria-label="Currency">
+              <option value="USD">USD</option>
+              <option value="INR">INR</option>
+            </select>
+          </label>
+          <label>
+            <select class="js-language" aria-label="Language">
+              <option value="en">English</option>
+              <option value="hi">Hindi</option>
+            </select>
+          </label>
+        </div>
+
+        <a class="cta" href="cart.html" data-cart-link>Cart (0)</a>
+      </header>
+
+      <main class="listing-page" aria-labelledby="listing-title">
+        <section class="listing-header" data-reveal>
+          <h1 id="listing-title">Shop Essentials</h1>
+          <p>Premium daily essentials crafted for calm routines and purposeful living.</p>
+        </section>
+
+        <section class="listing-controls" aria-label="Product filters" data-reveal>
+          <label class="search-wrap" for="product-search">
+            <span>Search</span>
+            <input id="product-search" type="search" placeholder="Search products" />
+          </label>
+
+          <label class="filter-wrap" for="category-filter">
+            <span>Category</span>
+            <select id="category-filter">
+              <option value="all">All</option>
+              <option value="wellness">Wellness</option>
+              <option value="home">Home</option>
+              <option value="ritual">Ritual</option>
+            </select>
+          </label>
+
+          <label class="filter-wrap" for="price-filter">
+            <span>Price</span>
+            <select id="price-filter">
+              <option value="all">All Prices</option>
+              <option value="0-30">Under $30</option>
+              <option value="30-50">$30 - $50</option>
+              <option value="50-100">$50 - $100</option>
+            </select>
+          </label>
+        </section>
+
+        <section class="product-grid" id="product-grid" aria-live="polite" data-reveal>
+          <article class="product-card" data-name="Celestial Aroma Oil" data-category="wellness" data-price="34">
+            <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format,compress&fit=crop&w=800&q=60" alt="Aroma oil bottle" loading="lazy" decoding="async" />
+            <div class="product-info">
+              <h2>Celestial Aroma Oil</h2>
+              <p data-usd-price="34">$34</p>
+              <div class="product-actions">
+                <a href="product.html">View Details</a>
+                <button class="quick-add" type="button" data-id="celestial-aroma-oil" data-name="Celestial Aroma Oil" data-price="34" data-image="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format,compress&fit=crop&w=800&q=60">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-name="Sacred Stone Diffuser" data-category="home" data-price="59">
+            <img src="https://images.unsplash.com/photo-1616628182509-6d3f282cd57b?auto=format,compress&fit=crop&w=800&q=60" alt="Stone diffuser" loading="lazy" decoding="async" />
+            <div class="product-info">
+              <h2>Sacred Stone Diffuser</h2>
+              <p data-usd-price="59">$59</p>
+              <div class="product-actions">
+                <a href="product.html">View Details</a>
+                <button class="quick-add" type="button" data-id="sacred-stone-diffuser" data-name="Sacred Stone Diffuser" data-price="59" data-image="https://images.unsplash.com/photo-1616628182509-6d3f282cd57b?auto=format,compress&fit=crop&w=800&q=60">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-name="Moonlight Incense Set" data-category="ritual" data-price="28">
+            <img src="https://images.unsplash.com/photo-1603006905393-cd5f4f5307cb?auto=format,compress&fit=crop&w=800&q=60" alt="Incense and holder" loading="lazy" decoding="async" />
+            <div class="product-info">
+              <h2>Moonlight Incense Set</h2>
+              <p data-usd-price="28">$28</p>
+              <div class="product-actions">
+                <a href="product.html">View Details</a>
+                <button class="quick-add" type="button" data-id="moonlight-incense-set" data-name="Moonlight Incense Set" data-price="28" data-image="https://images.unsplash.com/photo-1603006905393-cd5f4f5307cb?auto=format,compress&fit=crop&w=800&q=60">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-name="Purity Linen Mist" data-category="home" data-price="22">
+            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format,compress&fit=crop&w=800&q=60" alt="Linen mist bottle" loading="lazy" decoding="async" />
+            <div class="product-info">
+              <h2>Purity Linen Mist</h2>
+              <p data-usd-price="22">$22</p>
+              <div class="product-actions">
+                <a href="product.html">View Details</a>
+                <button class="quick-add" type="button" data-id="purity-linen-mist" data-name="Purity Linen Mist" data-price="22" data-image="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format,compress&fit=crop&w=800&q=60">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-name="Aura Crystal Candle" data-category="ritual" data-price="38">
+            <img src="https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?auto=format,compress&fit=crop&w=800&q=60" alt="Crystal candle" loading="lazy" decoding="async" />
+            <div class="product-info">
+              <h2>Aura Crystal Candle</h2>
+              <p data-usd-price="38">$38</p>
+              <div class="product-actions">
+                <a href="product.html">View Details</a>
+                <button class="quick-add" type="button" data-id="aura-crystal-candle" data-name="Aura Crystal Candle" data-price="38" data-image="https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?auto=format,compress&fit=crop&w=800&q=60">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-name="Tranquil Chakra Tea" data-category="wellness" data-price="26">
+            <img src="https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?auto=format,compress&fit=crop&w=800&q=60" alt="Herbal tea set" loading="lazy" decoding="async" />
+            <div class="product-info">
+              <h2>Tranquil Chakra Tea</h2>
+              <p data-usd-price="26">$26</p>
+              <div class="product-actions">
+                <a href="product.html">View Details</a>
+                <button class="quick-add" type="button" data-id="tranquil-chakra-tea" data-name="Tranquil Chakra Tea" data-price="26" data-image="https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?auto=format,compress&fit=crop&w=800&q=60">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+        </section>
+      </main>
+    </div>
+
+    <script src="intl.js" defer></script>
+    <script src="cart-utils.js" defer></script>
+    <script src="main.js" defer></script>
+    <script src="products.js" defer></script>
+  </body>
+</html>
