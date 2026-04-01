@@ -1,46 +1,4 @@
-<div style="position: relative; z-index: 2;">
-  <!-- TERA POORA WEBSITE CODE -->
-</div>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>3D Test</title>
-  <style>
-    body { margin: 0; overflow: hidden; background: black; }
-  </style>
-</head>
-<body>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-
-<script>
-const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
-
-const renderer = new THREE.WebGLRenderer();
-renderer.setSize(window.innerWidth, window.innerHeight);
-document.body.appendChild(renderer.domElement);
-
-const geometry = new THREE.BoxGeometry();
-const material = new THREE.MeshBasicMaterial({ color: 0x00ff00, wireframe: true });
-const cube = new THREE.Mesh(geometry, material);
-
-scene.add(cube);
-camera.position.z = 3;
-
-function animate() {
-  requestAnimationFrame(animate);
-  cube.rotation.x += 0.01;
-  cube.rotation.y += 0.01;
-  renderer.render(scene, camera);
-}
-
-animate();
-</script>
-
-</body>
-</html>
-
+<div id="three-container"></div>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -285,6 +243,15 @@ animate();
     <script src="subscribe.js" defer></script>
   </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>3D Test</title>
+  <style>
+    body { margin: 0; overflow: hidden; background: black; }
+  </style>
+</head>
+<body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
@@ -292,28 +259,48 @@ animate();
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
 
-const renderer = new THREE.WebGLRenderer({ alpha: true });
+const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
-document.getElementById("three-container").appendChild(renderer.domElement);
+document.body.appendChild(renderer.domElement);
 
-const geometry = new THREE.TorusKnotGeometry(1, 0.3, 100, 16);
-const material = new THREE.MeshStandardMaterial({ color: 0x6366f1 });
-const object = new THREE.Mesh(geometry, material);
+const geometry = new THREE.BoxGeometry();
+const material = new THREE.MeshBasicMaterial({ color: 0x00ff00, wireframe: true });
+const cube = new THREE.Mesh(geometry, material);
 
-scene.add(object);
-
-const light = new THREE.PointLight(0xffffff, 1);
-light.position.set(5,5,5);
-scene.add(light);
-
-camera.position.z = 5;
+scene.add(cube);
+camera.position.z = 3;
 
 function animate() {
   requestAnimationFrame(animate);
-  object.rotation.x += 0.01;
-  object.rotation.y += 0.01;
+  cube.rotation.x += 0.01;
+  cube.rotation.y += 0.01;
   renderer.render(scene, camera);
 }
 
 animate();
 </script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Divine Essentials</title>
+  <style>
+    body { margin: 0; overflow: hidden; background: #0f172a; }
+    canvas { display: block; }
+    h1 {
+      position: absolute;
+      top: 40%;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-size: 40px;
+    }
+  </style>
+</head>
+<body>
+
+          
