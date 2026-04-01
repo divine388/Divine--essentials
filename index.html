@@ -37,3 +37,280 @@ animate();
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Divine Essentials</title>
+  <style>
+    body { margin: 0; overflow: hidden; background: #0f172a; }
+    canvas { display: block; }
+    h1 {
+      position: absolute;
+      top: 40%;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-size: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Divine Essentials 🔥</h1>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<script>
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+
+  const renderer = new THREE.WebGLRenderer();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  document.body.appendChild(renderer.domElement);
+
+  const geometry = new THREE.TorusKnotGeometry(1, 0.3, 100, 16);
+  const material = new THREE.MeshStandardMaterial({ color: 0x6366f1, metalness: 0.7, roughness: 0.2 });
+  const torus = new THREE.Mesh(geometry, material);
+  scene.add(torus);
+
+  const light = new THREE.PointLight(0xffffff, 1);
+  light.position.set(5,5,5);
+  scene.add(light);
+
+  camera.position.z = 5;
+
+  function animate() {
+    requestAnimationFrame(animate);
+    torus.rotation.x += 0.01;
+    torus.rotation.y += 0.01;
+    renderer.render(scene, camera);
+  }
+
+  animate();
+</script>
+
+</body>
+</html
+<div class="card">
+  <img src="product.jpg">
+  <h3>Rudraksha Mala</h3>
+  <p>₹499</p>
+  <button>Add to Cart</button>
+</div>
+<section class="hero">
+  <h1>Divine Essentials</h1>
+  <p>Premium Spiritual Products for Inner Peace</p>
+  <button>Shop Now</button>
+</section>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="keywords" content="spiritual ecommerce, premium wellness products, incense oils candles, mindful living, divine essentials" />
+    <meta name="description" content="Shop premium spiritual essentials for mindful living, calm routines, and elevated daily rituals." />
+    <meta name="theme-color" content="#111111" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Divine Essentials | Premium Spiritual Living" />
+    <meta property="og:description" content="Shop premium spiritual essentials for mindful living, calm routines, and elevated daily rituals." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format,compress&fit=crop&w=1200&q=60" />
+    <meta property="og:url" content="https://divine-essentials.vercel.app/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://divine-essentials.vercel.app/" />
+    <title>Divine Essentials | Premium Spiritual Living</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+    <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="navbar" aria-label="Primary">
+        <a class="brand" href="index.html" aria-label="Divine Essentials home">Divine Essentials</a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          Menu
+        </button>
+
+        <nav id="nav-links" class="nav-links">
+          <a href="products.html">Shop</a>
+          <a href="products.html">Collections</a>
+          <a href="product.html">Featured</a>
+          <a href="login.html">Login</a>
+        </nav>
+
+        <div class="locale-controls" aria-label="Region settings">
+          <label>
+            <select class="js-currency" aria-label="Currency">
+              <option value="USD">USD</option>
+              <option value="INR">INR</option>
+            </select>
+          </label>
+          <label>
+            <select class="js-language" aria-label="Language">
+              <option value="en">English</option>
+              <option value="hi">Hindi</option>
+            </select>
+          </label>
+        </div>
+
+        <a class="cta" href="cart.html" data-cart-link>Cart (0)</a>
+      </header>
+
+      <main class="hero" aria-labelledby="hero-title">
+        <div class="hero-visual" aria-hidden="true">
+          <canvas id="spiritual-canvas"></canvas>
+        </div>
+
+        <div class="hero-overlay" data-reveal>
+          <p class="hero-eyebrow">Divine Essentials</p>
+          <h1 id="hero-title">Bring Divine Energy into Your Life</h1>
+          <p class="hero-copy">
+            Elevated essentials designed with purity, balance, and intention for your everyday ritual.
+          </p>
+          <a class="btn btn-primary" href="products.html">Shop Now</a>
+        </div>
+      </main>
+    </div>
+
+
+
+      <section class="subscribe-section" aria-labelledby="subscribe-title">
+        <div>
+          <p class="hero-eyebrow">Exclusive Offer</p>
+          <h2 id="subscribe-title">Get 10% off on your first order</h2>
+          <p>Join our inner circle for mindful product drops and premium rituals.</p>
+        </div>
+        <form id="subscribe-form" class="subscribe-form">
+          <input id="subscribe-email" type="email" placeholder="Enter your email" required />
+          <button class="btn btn-primary" type="submit">Claim 10% Off</button>
+          <p id="subscribe-status" class="payment-status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <div id="subscribe-popup" class="subscribe-popup" aria-hidden="true">
+        <div class="subscribe-popup-card">
+          <button id="subscribe-close" class="subscribe-close" type="button" aria-label="Close">×</button>
+          <p class="hero-eyebrow">Welcome Gift</p>
+          <h3>Get 10% off on your first order</h3>
+          <p>Subscribe to receive your instant welcome offer.</p>
+          <form id="subscribe-popup-form" class="subscribe-form">
+            <input id="subscribe-popup-email" type="email" placeholder="Your email" required />
+            <button class="btn btn-primary" type="submit">Get Offer</button>
+            <p id="subscribe-popup-status" class="payment-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+
+      <section class="trust-section" aria-labelledby="why-choose-title">
+        <div class="section-heading">
+          <p class="hero-eyebrow">Why Choose Us</p>
+          <h2 id="why-choose-title">A trusted global destination for spiritual essentials.</h2>
+        </div>
+        <div class="trust-grid">
+          <article>
+            <h3>Authentic Sourcing</h3>
+            <p>Every product is curated from ethical makers and verified wellness suppliers.</p>
+          </article>
+          <article>
+            <h3>Premium Quality</h3>
+            <p>Clean ingredients, refined packaging, and mindful craftsmanship in each order.</p>
+          </article>
+          <article>
+            <h3>Worldwide Experience</h3>
+            <p>International-friendly checkout, transparent pricing, and dedicated support.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="reviews-section" aria-labelledby="reviews-title">
+        <div class="section-heading">
+          <p class="hero-eyebrow">Customer Reviews</p>
+          <h2 id="reviews-title">Loved by mindful communities worldwide.</h2>
+        </div>
+        <div class="review-grid">
+          <article>
+            <p>“The quality is beautiful. My evening ritual feels elevated every day.”</p>
+            <strong>— Sofia M., New York</strong>
+          </article>
+          <article>
+            <p>“Fast delivery, calming products, and premium presentation from start to finish.”</p>
+            <strong>— Aarav K., Mumbai</strong>
+          </article>
+          <article>
+            <p>“Divine Essentials blends luxury and spirituality better than any brand I’ve tried.”</p>
+            <strong>— Emma R., London</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="payment-section" aria-label="Secure payment methods">
+        <p class="hero-eyebrow">Secure Payments</p>
+        <div class="badge-row">
+          <span>🔒 SSL Secure Checkout</span>
+          <span>💳 Razorpay Verified</span>
+          <span>🛡️ PCI-Compliant Partners</span>
+        </div>
+      </section>
+
+      <footer class="site-footer" aria-label="Footer">
+        <p>© 2026 Divine Essentials</p>
+        <nav>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Return Policy</a>
+          <a href="#">Contact</a>
+        </nav>
+      </footer>
+
+
+    <script src="intl.js" defer></script>
+    <script src="cart-utils.js" defer></script>
+    <script src="main.js" defer></script>
+    <script type="module" src="hero-3d.js"></script>
+    <script src="subscribe.js" defer></script>
+  </body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<script>
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+
+const renderer = new THREE.WebGLRenderer({ alpha: true });
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.getElementById("three-container").appendChild(renderer.domElement);
+
+const geometry = new THREE.TorusKnotGeometry(1, 0.3, 100, 16);
+const material = new THREE.MeshStandardMaterial({ color: 0x6366f1 });
+const object = new THREE.Mesh(geometry, material);
+
+scene.add(object);
+
+const light = new THREE.PointLight(0xffffff, 1);
+light.position.set(5,5,5);
+scene.add(light);
+
+camera.position.z = 5;
+
+function animate() {
+  requestAnimationFrame(animate);
+  object.rotation.x += 0.01;
+  object.rotation.y += 0.01;
+  renderer.render(scene, camera);
+}
+
+animate();
+</script>
