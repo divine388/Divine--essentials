@@ -1,3 +1,22 @@
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.card {
+  transition: 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
 .card {
   background: rgba(255,255,255,0.05);
   backdrop-filter: blur(10px);
