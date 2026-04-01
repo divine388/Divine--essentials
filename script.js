@@ -61,3 +61,18 @@ hoverElements.forEach(el => {
         el.classList.remove('hovered');  
     });  
 });
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [], // Specify the path to your template files
+  theme: {
+    extend: {
+      colors: {
+        primary: '#F5F5DC', // cream
+        secondary: '#FF9933', // deep saffron
+        accent: '#D4AF37', // gold
+      },
+      // Additional theme customization can go here
+    },
+  },
+  plugins: [],
+};
