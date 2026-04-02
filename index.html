@@ -58,3 +58,204 @@
     <script src="js/app.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divine Essentials - Spiritual Products & Wellness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-om"></i> Divine Essentials
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Peace, Positivity & Balance</h1>
+            <p>Discover authentic spiritual products for all paths and beliefs</p>
+            <a href="products.html" class="btn btn-primary">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="images/crystals.jpg" alt="Crystals & Gemstones">
+                    <h3>Crystals & Gemstones</h3>
+                    <p>Healing crystals and precious stones</p>
+                    <a href="products.html?category=crystals">Explore</a>
+                </div>
+                <div class="category-card">
+                    <img src="images/incense.jpg" alt="Incense & Aromatics">
+                    <h3>Incense & Aromatics</h3>
+                    <p>Pure fragrances for meditation</p>
+                    <a href="products.html?category=incense">Explore</a>
+                </div>
+                <div class="category-card">
+                    <img src="images/meditation.jpg" alt="Meditation Tools">
+                    <h3>Meditation Tools</h3>
+                    <p>Mats, cushions, and accessories</p>
+                    <a href="products.html?category=meditation">Explore</a>
+                </div>
+                <div class="category-card">
+                    <img src="images/jewelry.jpg" alt="Spiritual Jewelry">
+                    <h3>Spiritual Jewelry</h3>
+                    <p>Bracelets, necklaces, and rings</p>
+                    <a href="products.html?category=jewelry">Explore</a>
+                </div>
+                <div class="category-card">
+                    <img src="images/books.jpg" alt="Sacred Texts">
+                    <h3>Sacred Texts</h3>
+                    <p>Books and spiritual literature</p>
+                    <a href="products.html?category=books">Explore</a>
+                </div>
+                <div class="category-card">
+                    <img src="images/puja.jpg" alt="Puja Supplies">
+                    <h3>Puja Supplies</h3>
+                    <p>Ritual and worship items</p>
+                    <a href="products.html?category=puja">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="images/product1.jpg" alt="Amethyst Crystal">
+                    <h3>Amethyst Cluster</h3>
+                    <p class="price">$29.99</p>
+                    <p class="description">Beautiful amethyst crystal for protection and calm</p>
+                    <button class="btn btn-secondary" onclick="addToCart('Amethyst Cluster', 29.99)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/product2.jpg" alt="Yoga Mat">
+                    <h3>Premium Yoga Mat</h3>
+                    <p class="price">$45.99</p>
+                    <p class="description">Eco-friendly yoga mat for comfortable practice</p>
+                    <button class="btn btn-secondary" onclick="addToCart('Premium Yoga Mat', 45.99)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/product3.jpg" alt="Incense">
+                    <h3>Sandalwood Incense</h3>
+                    <p class="price">$12.99</p>
+                    <p class="description">Pure sandalwood incense sticks (50 pack)</p>
+                    <button class="btn btn-secondary" onclick="addToCart('Sandalwood Incense', 12.99)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/product4.jpg" alt="Prayer Beads">
+                    <h3>Rudraksha Mala</h3>
+                    <p class="price">$34.99</p>
+                    <p class="description">108 bead authentic rudraksha prayer beads</p>
+                    <button class="btn btn-secondary" onclick="addToCart('Rudraksha Mala', 34.99)">Add to Cart</button>
+                </div>
+            </div>
+            <a href="products.html" class="btn btn-primary">View All Products</a>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Divine Essentials helped me find peace in my daily meditation practice. Highly recommend!"</p>
+                    <footer>- Priya M.</footer>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"The quality of products is exceptional. I've purchased multiple times and never disappointed."</p>
+                    <footer>- Raj K.</footer>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Great customer service and fast delivery. My spiritual journey has been enhanced!"</p>
+                    <footer>- Sarah P.</footer>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Join Our Spiritual Community</h2>
+            <p>Subscribe for exclusive offers and spiritual wisdom</p>
+            <form id="newsletterForm">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Divine Essentials</h4>
+                    <p>We provide authentic spiritual products for all faiths and beliefs, promoting peace and positivity.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Divine Essentials. All rights reserved. | Promoting peace, positivity, and balance for all.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
