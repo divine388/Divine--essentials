@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://divine-essentials.vercel.app/sitemap.xml
